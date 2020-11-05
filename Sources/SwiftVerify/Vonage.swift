@@ -1,5 +1,8 @@
 import NIO
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public struct Vonage {
     private let apiKey: String
