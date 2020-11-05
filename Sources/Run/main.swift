@@ -1,4 +1,5 @@
 import Vapor
+import SwiftVerify
 
 let app = try Application(.detect())
 let client = Vonage(apiKey: Environment.get("APIKEY")!, apiSecret: Environment.get("APISECRET")!)
