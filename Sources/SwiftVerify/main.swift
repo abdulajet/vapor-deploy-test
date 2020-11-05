@@ -1,7 +1,7 @@
 import Vapor
 
 let app = try Application(.detect())
-let client = Vonage(apiKey: Environment.get("apiKey")!, apiSecret: Environment.get("apiSecret")!)
+let client = Vonage(apiKey: Environment.get("APIKEY")!, apiSecret: Environment.get("APISECRET")!)
 
 defer { app.shutdown() }
 
